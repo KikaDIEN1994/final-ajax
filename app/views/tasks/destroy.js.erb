@@ -1,0 +1,25 @@
+
+alert("le fichier JS est exécuté!");
+var a = document.getElementsByClassName("card1")
+var a1 = document.getElementsByClassName("a1")
+var title = "<%= @task.title %>"
+var cat = "<%= @task.category.title %>"
+var length = a.length
+var category = document.getElementsByClassName("cat1")
+var n = a1.length
+
+
+while (length !== 0){
+length = length -1 ;
+if (category[length].innerText === cat)
+while (n !== 0){
+n = n - 1
+
+if (a1[n].firstChild.nextElementSibling.innerText === title)
+{
+a1[n].className = "a1 collapse"
+}
+}
+
+
+}

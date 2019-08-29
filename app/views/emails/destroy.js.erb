@@ -1,0 +1,24 @@
+alert("le fichier JS est exécuté!");
+var Body = document.querySelector("p.bodyMail")
+var Liste = document.querySelector("a.list")
+
+var final = document.getElementsByTagName("h1")
+var wtf = document.querySelectorAll('a.try')
+var n1 = final.length
+var n = wtf.length
+
+while (n !== -1 ){
+n = n -1
+n1 = n1 - 1
+
+if (wtf[n].innerText === '<%= @email.object %>' ){
+
+  wtf[n].classList = "collapse"}
+console.log("x")
+
+console.log(final[0].innerText)
+if (final[n1].innerText === '<%= @email.object %>' ){
+final[n1].classList = "collapse"
+final[n1].nextSibling.nextSibling.classList = "collapse"
+final[n1].nextSibling.nextSibling.nextSibling.nextSibling.classList = "collapse"}
+}

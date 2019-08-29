@@ -1,0 +1,36 @@
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <ul class="card-title lol">Liste des mails
+                  <p id="list_mail"> </p>
+        <% @emails.each do |email| %>
+
+      <p  > <a class="try" <%= link_to email.object, email_path(email.id), remote: true %></a> </p>
+
+        <% end %>
+
+</ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Email sélectionné </h5>
+        <p class="card-text bodyMail"></p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <center>      <a class="btn btn-primary"<%= link_to 'Recevoir un email',
+    emails_path,
+                method: :post,
+
+                 remote: true %>  </a>
+                <br/>
+                <br/>

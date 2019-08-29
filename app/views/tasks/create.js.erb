@@ -1,0 +1,16 @@
+var category = document.getElementsByClassName("cat1")
+var card = document.getElementsByClassName("card1")
+console.log(category)
+var cat = "<%= @category.title %>"
+console.log(cat)
+var length = category.length
+console.log(length)
+
+while (length !== 0){
+length = length -1 ;
+if (category[length].innerText === cat)
+
+{ console.log(length)
+card[length].childNodes[1].insertAdjacentHTML("beforeend", "<%= j render 'task' %> ")}
+
+}
