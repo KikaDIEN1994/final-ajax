@@ -1,24 +1,5 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Ma version de Ruby n'est pas la bonne je suis en 2.5.5 au lieu de 2.5.1 et penser a retirer mon mot de passe dans le dossier config/database qui est:
+username: kika
+password: erty
